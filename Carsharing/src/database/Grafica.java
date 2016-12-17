@@ -1,9 +1,11 @@
+package database;
+
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Shell;
 
 public class Grafica {
 
-	protected Shell shell;
+	protected Shell shlCarsharing;
 
 	/**
 	 * Launch the application.
@@ -24,9 +26,9 @@ public class Grafica {
 	public void open() {
 		Display display = Display.getDefault();
 		createContents();
-		shell.open();
-		shell.layout();
-		while (!shell.isDisposed()) {
+		shlCarsharing.open();
+		shlCarsharing.layout();
+		while (!shlCarsharing.isDisposed()) {
 			if (!display.readAndDispatch()) {
 				display.sleep();
 			}
@@ -37,9 +39,9 @@ public class Grafica {
 	 * Create contents of the window.
 	 */
 	protected void createContents() {
-		shell = new Shell();
-		shell.setSize(450, 300);
-		shell.setText("SWT Application");
+		shlCarsharing = new Shell();
+		shlCarsharing.setText("Carsharing");
+		shlCarsharing.setSize(450, 300);
 
 	}
 
